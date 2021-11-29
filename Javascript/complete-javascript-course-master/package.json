@@ -1,0 +1,25 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "This repo contains starter files and final code for all sections and projects contained in the course.",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Jyoti Bansal",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.16.3",
+    "leaflet": "^1.7.1",
+    "lodash-es": "^4.17.21",
+    "regenerator-runtime": "^0.13.9"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0-rc.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Recipe Application"
+  }
+}

@@ -1,0 +1,34 @@
+body{
+  background-color: #eaf6f6;
+
+}
+h1{
+  color: #66bfbf;
+}
+h3{
+  color: #66bfbf;
+}
+hr{
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 5px;
+  border-color: grey;
+  width: 5%;
+}
+img:hover{
+  background-color: gold;             /*psedu class of hover*/
+}
+/*class selectors..........................*/
+.momo{
+  background-color: red;
+}
+.momos{
+  background-color: green;
+}
+.circular{
+  border-radius: 100%;
+}
+/*id selectors.............................*/
+#heading{
+  color: blue;
+}

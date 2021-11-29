@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Customization: Components - Carousel</title>
+    <link rel="stylesheet" href="../../css/components/carousel.css">
+    <style>
+      pre code {
+        color: #d63384;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container">
+          <div class="mb-0 h4"><a href="../index.html" class="navbar-brand">Bootstrap 5 Customization</a></div>
+          <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarDropdown" aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Global options</a>
+                <div class="dropdown-menu">
+                  <a href="../global-options/01-spacer.html" class="dropdown-item">Spacer</a>
+                  <a href="../global-options/02-border-radius.html" class="dropdown-item">Border radius</a>
+                  <a href="../global-options/03-box-shadow.html" class="dropdown-item">Box shadow</a>
+                  <a href="../global-options/04-gradients.html" class="dropdown-item">Gradients</a>
+                  <a href="../global-options/05-transitions.html" class="dropdown-item">Transitions</a>
+                  <a href="../global-options/06-caret.html" class="dropdown-item">Caret</a>
+                  <a href="../global-options/07-button-pointers.html" class="dropdown-item">Button pointers</a>
+                  <a href="../global-options/08-validation-icons.html" class="dropdown-item">Validation icons</a>
+                  <a href="../global-options/09-negative-margins.html" class="dropdown-item">Negative margins</a>
+                  <a href="../global-options/10-important-utilities.html" class="dropdown-item">Important utilities</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Colors</a>
+                <div class="dropdown-menu">
+                  <a href="../colors/01-colors-overview.html" class="dropdown-item">Colors overview</a>
+                  <a href="../colors/02-add-to-theme-colors.html" class="dropdown-item">Add to theme colors</a>
+                  <a href="../colors/03-remove-from-theme-colors.html" class="dropdown-item">Remove from theme colors</a>
+                  <a href="../colors/04-defining-color-palette.html" class="dropdown-item">Defining color palette</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layout</a>
+                <div class="dropdown-menu">
+                  <a href="../layout/breakpoints.html" class="dropdown-item">Breakpoints</a>
+                  <a href="../layout/container.html" class="dropdown-item">Container</a>
+                  <a href="../layout/grid.html" class="dropdown-item">Grid</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Content</a>
+                <div class="dropdown-menu">
+                  <a href="../content/typography.html" class="dropdown-item">Typography</a>
+                  <a href="../content/images.html" class="dropdown-item">Images</a>
+                  <a href="../content/tables.html" class="dropdown-item">Tables</a>
+                  <a href="../content/figures.html" class="dropdown-item">Figures</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Forms</a>
+                <div class="dropdown-menu">
+                  <a href="../forms/range.html" class="dropdown-item">Range</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Components</a>
+                <div class="dropdown-menu">
+                  <a href="../components/breadcrumb.html" class="dropdown-item">Breadcrumb</a>
+                  <a href="../components/card.html" class="dropdown-item">Card</a>
+                  <a href="../components/carousel.html" class="dropdown-item active">Carousel</a>
+                  <a href="../components/modal.html" class="dropdown-item">Modal</a>
+                  <a href="../components/progress.html" class="dropdown-item">Progress</a>
+                  <a href="../components/spinners.html" class="dropdown-item">Spinners</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Helpers</a>
+                <div class="dropdown-menu">
+                  <a href="../helpers/ratio.html" class="dropdown-item">Ratio</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Utilities</a>
+                <div class="dropdown-menu">
+                  <a href="../utilities/borders.html" class="dropdown-item">Borders</a>
+                  <a href="../utilities/position.html" class="dropdown-item">Position</a>
+                  <a href="../utilities/sizing.html" class="dropdown-item">Sizing</a>
+                  <a href="../utilities/spacing.html" class="dropdown-item">Spacing</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container pt-5">
+
+      <h1>Carousel</h1>
+      <p>Change the carousel transition duration.</p>
+      <h2 class="h4 text-muted my-3">SCSS:</h2>
+      <pre><code>$carousel-transition-duration: 1s;
+</code></pre>
+
+      <div id="carouselSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../../img/1200x600-success.png" alt="First slide" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="../../img/1200x600-danger.png" alt="Second slide" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="../../img/1200x600-warning.png" alt="Third slide" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="../../img/1200x600-info.png" alt="Fourth slide" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    
+    <script src="../../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

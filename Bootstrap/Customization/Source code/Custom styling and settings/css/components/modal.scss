@@ -1,0 +1,7 @@
+// Specify the modal animation
+$modal-fade-transform: scale(.25);
+
+// Specify max width for the extra large modal
+$modal-xl: calc(100% - 1rem);
+
+@import "../../bootstrap/scss/bootstrap";

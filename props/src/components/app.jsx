@@ -1,23 +1,22 @@
 import React from "react";
 
-function app(){
-    return(
-        <div>
-        <div>
+function App() {
+  return (
+    <div>
+      <div>
         <h1>To-Do list</h1>
-        </div>
-        <div>
-        <input type="text">
+      </div>
+      <div>
+        <input type="text" />
         <button>
-        <span> Add </span>
+          <span> Add </span>
         </button>
-        </div>
-        <div>
-    
+      </div>
+      <div>
         <ul>
-        <li>A Item</li>
+          <li>A Item</li>
         </ul>
-        </div>
-        </div>
-    );
+      </div>
+    </div>
+  );
 }
